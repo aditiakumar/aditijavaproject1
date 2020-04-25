@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Persnol Info</title>
+</head>
+
+
+<body bgcolor="Indigo" font-color=</"White">
+
+	<form action="myPersnolInfoRecord.htm" method="GET" target="_blank">
+		<table border='0' width='100%' cellpadding='0' cellspacing='0' align='center'>
+				<center><tr>
+				   <td><h1>Persnol Info</h1></td>
+				</tr><center>
+		 
+					<table border='0' width='100%' cellpadding='0px' cellspacing='0px' align='center'>
+					
+					
+		<td> Enter Your Gender  : </td>  <td> Male <input id="mygenmale"  name="mygen" type="radio" value="Male"> 
+									<br /> 
+									Female <input id="mygenfemale"  name="mygen" type="radio" value="Female"> </td>
+									
+		<td> Marital Status  : </td>  <td> Yes <input id="mygenyes"  name="mygen" type="radio" value="Yes"> 
+									<br /> 
+									
+									No <input id="mygenno"  name="mygen" type="radio" value="No"> </td>	
+									
+								<td align='center'>Name:</td>
+								<td><input type='text' name='name' id='name'></td>
+							</tr>
+							<tr> <td>&nbsp;</td> </tr>
+							<tr>
+								<td align='center'>Sur Name:</td>
+								<td><input type='text' name='surname' id='surname'></td>
+							</tr>
+							<tr> <td>&nbsp;</td> </tr>
+							<tr>
+								<td align='center'>Date Of Birth:</td>
+								<td><input type='text' name='dob' id='dob'></td>
+							</tr>
+							<tr> <td>&nbsp;</td> </tr>
+							<tr>
+							    <td align='center'>Hobby:</td>
+								<td><input type='text' name='Hobby' id='Hobby'></td>
+							</tr>
+							<tr> <td>&nbsp;</td> </tr>
+							<tr>
+							    <td align='center'>Country:</td>
+								<td><input type='text' name='Country' id='Country'></td>
+							</tr>
+							<tr> <td>&nbsp;</td> </tr>
+							<tr>
+							    <td align='center'>State:</td>
+								<td><input type='text' name='State' id='State'></td>
+							</tr>
+							<tr> <td>&nbsp;</td> </tr>
+							<tr>
+							    <td align='center'>District:</td>
+								<td><input type='text' name='District' id='District'></td>
+							</tr>
+							<tr> <td>&nbsp;</td> </tr>
+							<tr>
+							    <td align='center'>City:</td>
+								<td><input type='text' name='City' id='City'></td>
+							</tr>
+							<tr> <td>&nbsp;</td> </tr>
+							<tr>
+								 <td align='center'>Pincode:</td>
+								 <td><input type='text' name='Pincode' id='Pincode'></td>
+							</tr>
+							<tr> <td>&nbsp;</td> </tr>
+							<tr>
+								<td align='center'>Address:</td>
+								<td><input type='text' name='address' id='address'></td>
+							</tr>
+							<tr> <td>&nbsp;</td> </tr>
+							<tr>
+								<td align='center'>Phone:</td>
+								<td><input type='text' name='phone' id='phone'></td>
+							</tr>
+							<tr> <td>&nbsp;</td> </tr>
+							<tr>
+								<td align='center'>Email:</td>
+								<td><input type='text' name='email' id='email'></td>
+							</tr>
+							<tr> <td>&nbsp;</td> </tr>
+							<tr>
+								<td align='center'>Zip:</td>
+								<td><input type='text' name='zip'id='zip'></td>
+							</tr>
+							<tr> <td>&nbsp;</td> </tr>
+							
+		<td> Passport Details  : </td>  <td> Yes <input id="mygenyes"  name="mygen" type="radio" value="Yes"> 
+									<br /> 
+									No <input id="mygenno"  name="mygen" type="radio" value="No"> </td>	
+									
+		<td> Education  : </td>  <td> Masters <input id="mygenmasters"  name="mygen" type="radio" value="Masters"> 
+									<br /> 
+									Bachelors <input id="mygenbachelor"  name="mygen" type="radio" value="Bachelors"> </td>
+									
+	<tr>
+		<td>  Experience : </td>  <td>
+					Java <input id="myexperience1"  name="myexperience" type="checkbox" value="Java"> 
+					<br /> 
+					Python <input id="myexperience2"  name="myexperience" type="checkbox" value="Python">
+					<br />
+					Oracle <input id="myexperience3"  name="myexperience" type="checkbox" value="Oracle"> 
+					<br /> 
+					SQL <input id="myexperience4"  name="myexperience" type="checkbox" value="SQL">
+													
+									
+							
+							<table border='0' cellpadding='0' cellspacing='0' width='100%' align='center'>
+								<tr>
+									<td align='center'><input id='myreset' type='reset' name='myreset' value="RESET"></td>
+									<td align='center'><input id='mysubmit' type='submit' name='mysubmit' value="REGISTER"></td>
+									
+									<td align='center'><input id='myloc' type='button' name='myloc' value="Get Location" onclick="getMyLoc()"></td>
+								</tr>
+							</table>
+					</table>
+		 
+		</table>
+	</form>
+
+</body>
+
+<script>
+function getMyLoc()
+{
+	alert (window.location.href);
+}
+</script>
+</html>

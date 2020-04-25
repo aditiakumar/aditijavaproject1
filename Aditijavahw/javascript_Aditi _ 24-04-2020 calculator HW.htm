@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Math Functions</title>
+</head>
+
+<script>
+var myNum = 4.6;
+
+var result = 0;
+
+
+Math.round();
+
+// accept two argument
+
+result = Math.pow(myNum, 5)
+console.log (  result );  
+
+document.write("<br /> <hr /> <br />");
+document.write(myNum + "  power 65 is " +result);
+document.write("<br />");
+
+
+result =  Math.sqrt(myNum);
+document.write("<br /> <hr /> <br />");
+document.write("SQRT of " + myNum + " is " +result);
+document.write("<br />");
+
+result =  Math.ceil(myNum);   // rounds off the passed in value 
+document.write("<br /> <hr /> <br />");
+document.write("Ceal of " + myNum + " is " +result);
+document.write("<br />");
+
+result =  Math.floor(myNum);  // rounds off the passed in value 
+document.write("<br /> <hr /> <br />");
+document.write("Floor of " + myNum + " is " +result);
+document.write("<br />");
+
+// two paramaters
+//document.write("Value of PI is " + Math.PI );
+result =  Math.cos(myNum * Math.PI);
+document.write("<br /> <hr /> <br />");
+document.write("Cos of " + myNum + " is " +result);
+document.write("<br />");
+
+result =  Math.sin(myNum * Math.PI);
+document.write("<br /> <hr /> <br />");
+document.write("Sin of " + myNum + " is " +result);
+document.write("<br />");
+
+// accepts array
+
+//var myNumArr=[103,330,1235,230,221,100,22,80,96,12,14,23,5,345,4567,457,76,876,87,78];
+
+result =  Math.min(103,330,1235,230,221,100,22,80,96,12,14,23,5,345,4567,457,76,876,87,78);
+document.write("<br /> <hr /> <br />");
+document.write("Min Number in the list is "  +result);
+document.write("<br />");
+
+
+result =  Math.max(103,330,1235,230,221,100,22,80,96,12,14,23,5,345,4567,457,76,876,87,78);
+document.write("<br /> <hr /> <br />");
+document.write("Min Number in the list is "  +result);
+document.write("<br />");
+
+document.write("<br /> <hr /> <br />");
+document.write("Generating a Random number"  +Math.random());
+document.write("<br />");
+
+
+result = Math.floor( (Math.random() * 100) + 1);
+document.write("<br /> <hr /> <br />");
+document.write("Generating a Random number  "  +  result) ;
+document.write("<br />");
+
+//console.log (myNumArr);
+
+</script>
+
+</body>
+</html>

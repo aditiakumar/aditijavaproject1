@@ -1,0 +1,76 @@
+<script>
+
+//var myNumArr=[103,330,1235,230,221,100,22,80,96,12,14,23,5,345,4567,457,76,876,87,78];
+
+var myStrArr=["Mango", "Cherry", "Apple", "Pear", "Orange", "Banana" ];
+
+displayArr(myStrArr, "asc");
+displayArr(myStrArr, "desc");
+
+displayArr(myStrArr, "push", "Watermelon");
+
+displayArr(myStrArr, "pop");
+
+
+///varAct = pop  push , asc, desc
+
+function displayArr(arrVar, varAct, myNewVal)
+{
+		if(varAct=="pop")
+		{
+			arrVar.pop()
+		}else if(varAct=="push")
+		{
+			arrVar.push(myNewVal);
+		}else if(varAct=="asc")
+		{
+			arrVar.sort();
+		}else if(varAct=="desc")
+		{
+			arrVar.reverse();
+		}
+		
+		document.write("<br /> <hr /> <br />");
+		for(index=0; index < arrVar.length; index++)
+		{
+			document.write(arrVar[index]);
+			document.write("<br />");
+		}
+}
+
+		
+/*
+function myNumSort(myNumArr)
+{
+	var isComplete = false;
+	
+	while(!isComplete)
+	{
+		isComplete = true;
+		for(index=1; index < myNumArr.length; index++)
+		{	
+			myNumArr[index];
+			
+			if( myNumArr[index - 1] > myNumArr[index])
+			{
+			    isComplete = false;
+				var tmp = myNumArr[index - 1];
+				
+				 myNumArr[index - 1]  =  myNumArr[index];
+				 
+				 myNumArr[index] = tmp;
+			}
+			
+		} // end inner for
+		
+	} // end while
+	
+	return myNumArr;
+}
+
+// myNumSort(myNumArr);
+
+console.log (myNumArr);
+*/
+
+</script>
